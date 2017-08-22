@@ -7,7 +7,7 @@ import (
 )
 
 func SendEmail(w http.ResponseWriter, r *http.Request) {
-	body := r.FormValue("Greeting")
+	body := r.FormValue("Message")
 	from := FromEmail
 	pass := EmailPass
 	to := ToEmail

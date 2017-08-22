@@ -16,7 +16,7 @@ import "net/http"
 // 	Route{
 // 		"IndieExpo",
 // 		"POST",
-// 		"/email",
+// 		"/send",
 // 		"www.indieexpo.co",
 // 		SendEmail,
 // 	},
@@ -34,7 +34,7 @@ var routes = Routes{
 	Route{
 		"IndieExpo",
 		"POST",
-		"/email",
+		"/send",
 		SendEmail,
 	},
 }
