@@ -14,7 +14,7 @@ func SendEmail(w http.ResponseWriter, r *http.Request) {
 
 	msg := "From: " + from + "\n" +
 		"To: " + to + "\n" +
-		"Subject: " + r.Host + "\n\n" +
+		"Subject: " + r.Header.Get("Origin") + "\n\n" +
 		body
 	err := smtp.SendMail("smtp.gmail.com:587",
 		smtp.PlainAuth("", from, pass, "smtp.gmail.com"),
