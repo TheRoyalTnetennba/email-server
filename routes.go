@@ -37,4 +37,10 @@ var routes = Routes{
 		"/send",
 		SendEmail,
 	},
+	Route{
+		"HireMe",
+		"POST",
+		"/demo",
+		SmartBiz,
+	},
 }
